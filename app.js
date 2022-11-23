@@ -10,9 +10,15 @@ const createGrid = (amtOfGrids) => {
         row.classList.add('grid-row')
      
         for (let j = 0; j < amtOfGrids; j++) {
-            const dimensions = 960 / sizeOfGrid;
+            const widthAndHeight = 960 / sizeOfGrid;
             const gridBox = document.createElement('div')
             gridBox.classList.add('grid-box')
+
+
+            gridBox.addEventListener('mouseenter', () => {
+                gridBox.style.backgroundColor = 'blue';
+            })
+
             row.appendChild(gridBox)
         }
 
