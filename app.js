@@ -1,7 +1,7 @@
 // Global Definitions
 const sizeOfGrid = 64;
 const container = document.querySelector('.container')
-const reset = document.querySelector('.reset');
+const resetButton = document.querySelector('.reset');
 
 // Creates a Grid
 
