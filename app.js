@@ -3,11 +3,15 @@ const cellDiv = document.querySelector('.container');
 
 // Creates a 16x16 Grid
 for (let i = 0; i < 256; i++) {
-  const cell = document.createElement('div');
-  cellDiv.appendChild(cell);
+  const div = document.createElement('div');
+  cellDiv.appendChild(div);
 }
 
+document.getElementById('div').addEventListener('mouseover', mouseOver);
 
+function mouseOver() {
+    document.getElementById('div').style.color = "blue";
+}
 
 /** 
 function Grid = () {
