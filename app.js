@@ -1,17 +1,13 @@
 // Global Definitions
-const cellDiv = document.querySelector('.container');
+const container = document.querySelector('.container');
 
-// Creates a 16x16 Grid
-for (let i = 0; i < 256; i++) {
-  const div = document.createElement('div');
-  cellDiv.appendChild(div);
+// Creates a Grid
+
+const Grid = numberOfGrids => {
+    
 }
 
-document.getElementById('div').addEventListener('mouseover', mouseOver);
 
-function mouseOver() {
-    document.getElementById('div').style.color = "blue";
-}
 
 /** 
 function Grid = () {
@@ -19,14 +15,13 @@ function Grid = () {
     for (let i = 0; i < 257; i++)
 }
 
-let count = 0;
 
 // Creates a 16x16 Grid
-function Grid(makeGrid) {
+const Grid(makeGrid) {
     for (let i = 0; i < 257; i++) {
         const cell = document.createElement('cell');
         cellDiv.appendChild(cell);
-        count++;
+
     }
 
     if (count === 256) {
@@ -34,5 +29,13 @@ function Grid(makeGrid) {
     }
 }
 console.log(Grid());
+
+for (let i = 0; i < 256; i++) {
+  const cell = document.createElement('div');
+  container.appendChild(div);
+  cell.addEventListener('mouseenter', () => {
+    cell.style.backgroundColor = 'blue';
+    })
+}
 
 */
