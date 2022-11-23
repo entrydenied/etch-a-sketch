@@ -9,8 +9,8 @@ const createGrid = (amtOfGrids) => {
         const row = document.createElement('div')
         row.classList.add('grid-row')
      
-        for (let j = 0; j < amtOfGrids; o++) {
-//            const dimensions = 960 / sizeOfGrid;
+        for (let j = 0; j < amtOfGrids; j++) {
+            const dimensions = 960 / sizeOfGrid;
             const gridBox = document.createElement('div')
             gridBox.classList.add('grid-box')
             row.appendChild(gridBox)

@@ -1,12 +1,12 @@
-.container {
+.grid-row {
     display: flex;
 }
 
-.gridBox {
+.grid-box {
     height: 20px;
     width: 20px;
     border: 1px solid black;
-    background-color: white;
+    background-color: blue;
 }
 
 
