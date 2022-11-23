@@ -1,5 +1,5 @@
 // Global Definitions
-const sizeOfGrid = 64;
+const sizeOfGrid = 5;
 const container = document.querySelector('.container')
 const resetButton = document.querySelector('.reset');
 
@@ -30,9 +30,22 @@ const createGrid = (amtOfGrids) => {
 
 createGrid(sizeOfGrid)
 
+// Reset Button
+
+resetButton.addEventListener('click', () => {
+    let usersNumber = Number(prompt("How many squares do you want to draw with? (Pick a number that's 100 or less)")) 
+
+    while (usersNumber > 100) {
+        usersNumber = Number(prompt("How many squares do you want to draw with? (Pick a number that's 100 or less)"))
+    }
+    createGrid(usersNumber)  
+})
 
 
 /** 
+createGrid(sizeOfGrid)
+
+
 function Grid = () {
     alert
     for (let i = 0; i < 257; i++)
