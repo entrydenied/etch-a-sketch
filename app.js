@@ -1,11 +1,26 @@
 // Global Definitions
-const container = document.querySelector('.container');
+const sizeOfGrid = 16;
+const container = document.querySelector('.container')
 
 // Creates a Grid
 
-const Grid = numberOfGrids => {
-    
+const createGrid = (amtOfGrids) => {
+    for (let i = 0; i < amtOfGrids; i++) {
+        const row = document.createElement('div')
+        row.classList.add('grid-row')
+     
+        for (let j = 0; j < amtOfGrids; o++) {
+//            const dimensions = 960 / sizeOfGrid;
+            const gridBox = document.createElement('div')
+            gridBox.classList.add('grid-box')
+            row.appendChild(gridBox)
+        }
+
+        container.appendChild(row)
+    }
 }
+
+createGrid(sizeOfGrid)
 
 
 
